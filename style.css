@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sc1 {
+    height: 200px;
+    width: 33.32%;
+    background-color: red;
+    border: 1px solid black;
+    padding: 30px;
+    position: relative;
+}
+
+.sc1 p {
+    font-size: 20px;
+    color: #ffff;
+    font-family: sans-serif;
+}
+.sc1 h3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+
+/* Tablet view CSS code */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .sc1 {
+        width: 50%;
+        background-color: blue;
+    }
+    .sc1:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Mobile view CSS code */
+@media screen and (max-width: 767px) {
+    .sc1 {
+        width: 100%;
+        background-color: green; 
+    }
+}
